@@ -14,49 +14,59 @@
 
         /* Body styling */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
-            color: #333;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff8c00, #ff2e63);
+            color: #fff;
+            text-align: center;
+            padding: 50px;
         }
 
         /* Header */
         header {
-            background-color: #282828;
-            color: #fff;
-            text-align: center;
+            background: rgba(0, 0, 0, 0.8);
             padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
         h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
         /* Section Styling */
-        section {
-            text-align: center;
+        .intro {
+            background: rgba(255, 255, 255, 0.2);
             padding: 30px;
-            margin: 20px;
+            border-radius: 15px;
+            margin-top: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            position: relative;
         }
 
-        .intro {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        .emoji {
+            font-size: 2rem;
+            animation: float 2s infinite alternate;
+            display: inline-block;
+            margin: 10px;
         }
 
         .telegram-link, .buy-link {
             display: inline-block;
             margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #0078e7;
+            padding: 15px 25px;
+            background: #ff2e63;
             color: #fff;
             text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.1rem;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: 0.3s;
         }
 
         .telegram-link:hover, .buy-link:hover {
-            background-color: #005bb5;
+            background: #ff8c00;
         }
 
         /* Image Section */
@@ -67,38 +77,50 @@
 
         .animated-image {
             width: 80%;
-            max-width: 600px;
-            border-radius: 15px;
+            max-width: 500px;
+            border-radius: 20px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
             animation: bounce 2s infinite;
         }
 
         /* Footer Styling */
         footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #282828;
-            color: #fff;
+            margin-top: 30px;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
-        /* Animation */
+        /* Animations */
         @keyframes bounce {
             0%, 100% {
                 transform: translateY(0);
             }
             50% {
-                transform: translateY(-20px);
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            100% {
+                transform: translateY(-10px);
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to $ToJe - The Tom and Jerry Meme Coin</h1>
+        <h1>🚀 Welcome to $ToJe - The Tom and Jerry Meme Coin 🎉</h1>
     </header>
 
     <section class="intro">
-        <h2>Join the $ToJe Community!</h2>
+        <h2>Join the $ToJe Community! 🎭</h2>
         <p>Get ready for the ultimate meme coin inspired by the iconic Tom and Jerry! Join us now on our Telegram channel for updates and more!</p>
+        <span class="emoji">🐭</span> <span class="emoji">🍖</span> <span class="emoji">🐱</span>
         <a href="https://t.me/+MKnAAEJcdFRhYzYx" target="_blank" class="telegram-link">Join Telegram</a>
         <a href="https://pump.fun/coin/DbHK2oWyZemjsc73kMZsf58WsdJ1ruCsRfMHc33dpump" target="_blank" class="buy-link">Buy $ToJe Now!</a>
     </section>
@@ -108,7 +130,7 @@
     </section>
 
     <footer>
-        <p>© 2025 $ToJe Meme Coin - All Rights Reserved</p>
+        <p>© 2025 $ToJe Meme Coin - All Rights Reserved 🚀🔥</p>
     </footer>
 </body>
 </html>
